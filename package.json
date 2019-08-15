@@ -1,0 +1,19 @@
+{
+  "name": "semantic-html",
+  "version": "1.0.0",
+  "description": "Examples of using semantic HTML to provide more information about content",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikemccaughan/semantic-html.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mikemccaughan/semantic-html/issues"
+  },
+  "homepage": "https://github.com/mikemccaughan/semantic-html#readme"
+}
