@@ -43,9 +43,41 @@
       href="./Pricing example · Bootstrap_files/pricing.css"
       rel="stylesheet"
     />
+    <style>
+      .btn-outline-primary {
+        color: #0053bd;
+      }
+      .btn-primary {
+        background-color: #0053bd;
+        border-color: #0053bd;
+      }
+      footer.container.row {
+        margin-right: auto;
+        margin-left: auto;
+        padding-right: 0;
+        padding-left: 0;
+        /* Note: we'd need to add @media for this across breakpoints IRL */
+        max-width: 930px;
+      }
+      footer aside:first-child {
+        padding-left: 0;
+      }
+      footer nav:last-child {
+        padding-right: 0;
+      }
+      h2.card-header {
+        font-size: 1.5rem;
+      }
+      h3.pricing-card-title {
+        font-size: 2.5rem;
+      }
+    </style>
   </head>
 
   <body>
+    <a href="#page-header" class="sr-only sr-only-focusable"
+      >Skip to main content</a
+    >
     <header
       class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm"
     >
@@ -75,31 +107,32 @@
       <a
         class="btn btn-outline-primary"
         href="https://getbootstrap.com/docs/4.3/examples/pricing/#"
+        role="link"
         >Sign up</a
       >
     </header>
 
-    <header
-      class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center"
-    >
-      <h1 class="display-4">Pricing</h1>
-      <p class="lead">
-        Quickly build an effective pricing table for your potential customers
-        with this Bootstrap example. It’s built with default Bootstrap
-        components and utilities with little customization.
-      </p>
-    </header>
-
     <main class="container">
+      <header
+        class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center"
+        role="heading"
+        aria-level="1"
+        aria-labelledby="page-header"
+      >
+        <h1 class="display-4" id="page-header"><a id="pricing" name="pricing" tabindex="-1"></a>Pricing</a></h1>
+        <p class="lead">
+          Quickly build an effective pricing table for your potential customers
+          with this Bootstrap example. It’s built with default Bootstrap
+          components and utilities with little customization.
+        </p>
+      </header>
       <div class="card-deck mb-3 text-center">
         <section class="card mb-4 shadow-sm">
-          <div class="card-header">
-            <h4 class="my-0 font-weight-normal">Free</h4>
-          </div>
+          <h2 class="my-0 font-weight-normal card-header">Free</h2>
           <div class="card-body">
-            <h1 class="card-title pricing-card-title">
+            <h3 class="card-title pricing-card-title">
               $0 <small class="text-muted">/ mo</small>
-            </h1>
+            </h3>
             <ul class="list-unstyled mt-3 mb-4">
               <li>10 users included</li>
               <li>2 GB of storage</li>
@@ -115,13 +148,11 @@
           </div>
         </section>
         <section class="card mb-4 shadow-sm">
-          <div class="card-header">
-            <h4 class="my-0 font-weight-normal">Pro</h4>
-          </div>
+          <h2 class="my-0 font-weight-normal card-header">Pro</h2>
           <div class="card-body">
-            <h1 class="card-title pricing-card-title">
+            <h3 class="card-title pricing-card-title">
               $15 <small class="text-muted">/ mo</small>
-            </h1>
+            </h3>
             <ul class="list-unstyled mt-3 mb-4">
               <li>20 users included</li>
               <li>10 GB of storage</li>
@@ -134,13 +165,11 @@
           </div>
         </section>
         <section class="card mb-4 shadow-sm">
-          <div class="card-header">
-            <h4 class="my-0 font-weight-normal">Enterprise</h4>
-          </div>
+          <h2 class="my-0 font-weight-normal card-header">Enterprise</h2>
           <div class="card-body">
-            <h1 class="card-title pricing-card-title">
+            <h3 class="card-title pricing-card-title">
               $29 <small class="text-muted">/ mo</small>
-            </h1>
+            </h3>
             <ul class="list-unstyled mt-3 mb-4">
               <li>30 users included</li>
               <li>15 GB of storage</li>
@@ -153,134 +182,135 @@
           </div>
         </section>
       </div>
-
-      <footer class="pt-4 my-md-5 pt-md-5 border-top">
-        <div class="row">
-          <div class="col-12 col-md">
-            <img
-              class="mb-2"
-              src="./Pricing example · Bootstrap_files/bootstrap-solid.svg"
-              alt=""
-              width="24"
-              height="24"
-            />
-            <small class="d-block mb-3 text-muted">© 2017-2019</small>
-          </div>
-          <div class="col-6 col-md">
-            <h5>Features</h5>
-            <ul class="list-unstyled text-small">
-              <li>
-                <a
-                  class="text-muted"
-                  href="https://getbootstrap.com/docs/4.3/examples/pricing/#"
-                  >Cool stuff</a
-                >
-              </li>
-              <li>
-                <a
-                  class="text-muted"
-                  href="https://getbootstrap.com/docs/4.3/examples/pricing/#"
-                  >Random feature</a
-                >
-              </li>
-              <li>
-                <a
-                  class="text-muted"
-                  href="https://getbootstrap.com/docs/4.3/examples/pricing/#"
-                  >Team feature</a
-                >
-              </li>
-              <li>
-                <a
-                  class="text-muted"
-                  href="https://getbootstrap.com/docs/4.3/examples/pricing/#"
-                  >Stuff for developers</a
-                >
-              </li>
-              <li>
-                <a
-                  class="text-muted"
-                  href="https://getbootstrap.com/docs/4.3/examples/pricing/#"
-                  >Another one</a
-                >
-              </li>
-              <li>
-                <a
-                  class="text-muted"
-                  href="https://getbootstrap.com/docs/4.3/examples/pricing/#"
-                  >Last time</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="col-6 col-md">
-            <h5>Resources</h5>
-            <ul class="list-unstyled text-small">
-              <li>
-                <a
-                  class="text-muted"
-                  href="https://getbootstrap.com/docs/4.3/examples/pricing/#"
-                  >Resource</a
-                >
-              </li>
-              <li>
-                <a
-                  class="text-muted"
-                  href="https://getbootstrap.com/docs/4.3/examples/pricing/#"
-                  >Resource name</a
-                >
-              </li>
-              <li>
-                <a
-                  class="text-muted"
-                  href="https://getbootstrap.com/docs/4.3/examples/pricing/#"
-                  >Another resource</a
-                >
-              </li>
-              <li>
-                <a
-                  class="text-muted"
-                  href="https://getbootstrap.com/docs/4.3/examples/pricing/#"
-                  >Final resource</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="col-6 col-md">
-            <h5>About</h5>
-            <ul class="list-unstyled text-small">
-              <li>
-                <a
-                  class="text-muted"
-                  href="https://getbootstrap.com/docs/4.3/examples/pricing/#"
-                  >Team</a
-                >
-              </li>
-              <li>
-                <a
-                  class="text-muted"
-                  href="https://getbootstrap.com/docs/4.3/examples/pricing/#"
-                  >Locations</a
-                >
-              </li>
-              <li>
-                <a
-                  class="text-muted"
-                  href="https://getbootstrap.com/docs/4.3/examples/pricing/#"
-                  >Privacy</a
-                >
-              </li>
-              <li>
-                <a
-                  class="text-muted"
-                  href="https://getbootstrap.com/docs/4.3/examples/pricing/#"
-                  >Terms</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-      </footer>
     </main>
+
+    <footer class="pt-4 my-md-5 pt-md-5 border-top container row">
+      <a href="#pricing" class="sr-only sr-only-focusable"
+        >Back to main content</a
+      >
+      <aside class="col-12 col-md" role="contentinfo">
+        <img
+          class="mb-2"
+          src="./Pricing example · Bootstrap_files/bootstrap-solid.svg"
+          alt=""
+          width="24"
+          height="24"
+        />
+        <small class="d-block mb-3 text-muted">© 2017-2019</small>
+      </aside>
+      <nav class="col-6 col-md">
+        <h5>Features</h5>
+        <ul class="list-unstyled text-small">
+          <li>
+            <a
+              class="text-muted"
+              href="https://getbootstrap.com/docs/4.3/examples/pricing/#"
+              >Cool stuff</a
+            >
+          </li>
+          <li>
+            <a
+              class="text-muted"
+              href="https://getbootstrap.com/docs/4.3/examples/pricing/#"
+              >Random feature</a
+            >
+          </li>
+          <li>
+            <a
+              class="text-muted"
+              href="https://getbootstrap.com/docs/4.3/examples/pricing/#"
+              >Team feature</a
+            >
+          </li>
+          <li>
+            <a
+              class="text-muted"
+              href="https://getbootstrap.com/docs/4.3/examples/pricing/#"
+              >Stuff for developers</a
+            >
+          </li>
+          <li>
+            <a
+              class="text-muted"
+              href="https://getbootstrap.com/docs/4.3/examples/pricing/#"
+              >Another one</a
+            >
+          </li>
+          <li>
+            <a
+              class="text-muted"
+              href="https://getbootstrap.com/docs/4.3/examples/pricing/#"
+              >Last time</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <nav class="col-6 col-md">
+        <h5>Resources</h5>
+        <ul class="list-unstyled text-small">
+          <li>
+            <a
+              class="text-muted"
+              href="https://getbootstrap.com/docs/4.3/examples/pricing/#"
+              >Resource</a
+            >
+          </li>
+          <li>
+            <a
+              class="text-muted"
+              href="https://getbootstrap.com/docs/4.3/examples/pricing/#"
+              >Resource name</a
+            >
+          </li>
+          <li>
+            <a
+              class="text-muted"
+              href="https://getbootstrap.com/docs/4.3/examples/pricing/#"
+              >Another resource</a
+            >
+          </li>
+          <li>
+            <a
+              class="text-muted"
+              href="https://getbootstrap.com/docs/4.3/examples/pricing/#"
+              >Final resource</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <nav class="col-6 col-md">
+        <h5>About</h5>
+        <ul class="list-unstyled text-small">
+          <li>
+            <a
+              class="text-muted"
+              href="https://getbootstrap.com/docs/4.3/examples/pricing/#"
+              >Team</a
+            >
+          </li>
+          <li>
+            <a
+              class="text-muted"
+              href="https://getbootstrap.com/docs/4.3/examples/pricing/#"
+              >Locations</a
+            >
+          </li>
+          <li>
+            <a
+              class="text-muted"
+              href="https://getbootstrap.com/docs/4.3/examples/pricing/#"
+              >Privacy</a
+            >
+          </li>
+          <li>
+            <a
+              class="text-muted"
+              href="https://getbootstrap.com/docs/4.3/examples/pricing/#"
+              >Terms</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </footer>
   </body>
 </html>
